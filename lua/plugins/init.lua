@@ -102,6 +102,9 @@ return {
     {
         "NeogitOrg/neogit",
         cmd = "Neogit",
+        keys = {
+            {"<f6>", "<cmd>Neogit", desc = "Open Neogit interface for Git operations" },
+        },
         dependencies = {
             "nvim-lua/plenary.nvim",         -- required
             "nvim-telescope/telescope.nvim", -- optional
@@ -109,5 +112,22 @@ return {
             "ibhagwan/fzf-lua",              -- optional
         },
         config = true
+    },
+
+    -- Better UI
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {
+            -- add any options here
+        },
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        },
     },
 }
