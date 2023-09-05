@@ -7,6 +7,15 @@ return {
     },
 
     {
+        "nvim-lualine/lualine.nvim",
+        event = "VeryLazy",
+        options = { theme = "auto" },
+        config = function()
+            require('lualine').setup()
+        end,
+    },
+
+    {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
         opts = {}
@@ -90,4 +99,15 @@ return {
         },
     },
 
+    {
+        "NeogitOrg/neogit",
+        cmd = "Neogit",
+        dependencies = {
+            "nvim-lua/plenary.nvim",         -- required
+            "nvim-telescope/telescope.nvim", -- optional
+            "sindrets/diffview.nvim",        -- optional
+            "ibhagwan/fzf-lua",              -- optional
+        },
+        config = true
+    },
 }
