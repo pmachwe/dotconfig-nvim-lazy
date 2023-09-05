@@ -30,4 +30,14 @@ return {
             require('telescope').load_extension('neoclip')
         end,
     },
+
+    -- Tmux
+    {
+        'camgraff/telescope-tmux.nvim',
+        dependencies = { "nvim-telescope/telescope.nvim" },
+        keys = {
+            {'<Leader>ftw', "<cmd> Telescope tmux windows<CR>", desc = "Tmux windows"},
+            {'<Leader>fts', "<cmd> Telescope tmux sessions<CR>", desc = "Tmux sessions"},
+        },
+    },
 }
