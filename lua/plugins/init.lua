@@ -1,18 +1,12 @@
 return {
-    {
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        opts = {}
-    },
+    'tpope/vim-dispatch', -- Async
+    'junegunn/vim-peekaboo', -- Registers
+    'tpope/vim-scriptease', -- :Message
 
     {
         'machakann/vim-highlightedyank',
         event = "InsertEnter",
     },
-
-    'tpope/vim-dispatch',
-
-    'junegunn/vim-peekaboo',
 
     {
         'christoomey/vim-tmux-navigator',
@@ -20,8 +14,7 @@ return {
     },
 
     {
-        'ethanholz/nvim-lastplace',
-        config = function()
+        'ethanholz/nvim-lastplace', config = function()
             require'nvim-lastplace'.setup {
                 lastplace_ignore_buftype = {"quickfix", "nofile", "help"},
                 lastplace_ignore_filetype = {"gitcommit", "gitrebase", "svn", "hgcommit"},
@@ -29,23 +22,6 @@ return {
             }
         end
     },
-
-    -- context-aware commenting
-    {
-        'numToStr/Comment.nvim',
-        event = "InsertEnter",
-        config = function()
-            require('Comment').setup()
-        end
-    },
-
-    {
-        'nmac427/guess-indent.nvim',
-        event = "InsertEnter",
-        config = function() require('guess-indent').setup {} end,
-    },
-
-    'tpope/vim-scriptease', -- :Message
 
     -- use this instead of leap.nvim
     {
@@ -61,20 +37,5 @@ return {
             { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
             { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
         },
-    },
-
-    {
-        "NeogitOrg/neogit",
-        cmd = "Neogit",
-        keys = {
-            {"<f6>", "<cmd>Neogit", desc = "Open Neogit interface for Git operations" },
-        },
-        dependencies = {
-            "nvim-lua/plenary.nvim",         -- required
-            "nvim-telescope/telescope.nvim", -- optional
-            "sindrets/diffview.nvim",        -- optional
-            "ibhagwan/fzf-lua",              -- optional
-        },
-        config = true
     },
 }
