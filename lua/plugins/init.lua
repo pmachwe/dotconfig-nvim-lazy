@@ -15,11 +15,6 @@ return {
     'junegunn/vim-peekaboo',
 
     {
-        'ngemily/vim-vp4',
-        cmd ="Vp4",
-    },
-
-    {
         'christoomey/vim-tmux-navigator',
         cmd = {"TmuxNavigateLeft", "TmuxNavigateUp", "TmuxNavigateDown", "TmuxNavigateRight", "TmuxNavigatePrevious"},
     },
