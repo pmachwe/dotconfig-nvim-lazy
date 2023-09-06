@@ -15,7 +15,7 @@ M.set_theme = function()
 
     for line in f:lines() do
         if line == "dark" then
-            cs = "nordfox"
+            cs = "nightfox"
         else
             cs = "dayfox"
         end
