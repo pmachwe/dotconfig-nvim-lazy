@@ -6,8 +6,9 @@ vim.g.mapleader = ','
 
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', opts)
 vim.api.nvim_set_keymap('n', '<Leader>w', ':update<CR>', opts)
-vim.api.nvim_set_keymap('i', '<Leader>w', '<Esc>:update<CR>', opts)
-vim.api.nvim_set_keymap('i', '<Leader>z', '<Esc>', opts)
+-- These 2 cause editor to pause after , in insert mode
+-- vim.api.nvim_set_keymap('i', '<Leader>w', '<Esc>:update<CR>', opts)
+-- vim.api.nvim_set_keymap('i', '<Leader>z', '<Esc>', opts)
 vim.api.nvim_set_keymap('n', '<Leader>q', ':quit<CR>', opts)
 vim.api.nvim_set_keymap('n', '<Leader><Leader>s', ':source %<CR>', opts)
 vim.api.nvim_set_keymap('n', '<Leader><Leader>i', ':edit ~/.config/nvim/init.lua<CR>', opts)
