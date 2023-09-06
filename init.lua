@@ -18,4 +18,4 @@ vim.g.maplocalleader = ","
 require("lazy").setup("plugins")
 require("user.settings")
 require("user.mappings")
-require("user.functions")
+require("user.functions").set_theme()

@@ -11,8 +11,8 @@ vim.o.wildmode = 'list:longest:full'
 
 -- Use both for hybrid
 -- Current line shows absolute
-vim.o.relativenumber = true
-vim.o.number = true
+vim.o.relativenumber = false
+vim.o.number = false
 
 vim.o.hlsearch = true
 vim.o.incsearch = true
