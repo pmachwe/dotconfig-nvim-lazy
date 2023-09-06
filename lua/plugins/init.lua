@@ -11,11 +11,11 @@ return {
     {
         'christoomey/vim-tmux-navigator',
         keys = {
-            {'<A-h>', ':TmuxNavigateLeft<CR>', desc = "Tmux Left"}
-            {'<A-j>', ':TmuxNavigateDown<CR>', desc = "Tmux Down"}
-            {'<A-k>', ':TmuxNavigateUp<CR>', desc = "Tmux Up"}
-            {'<A-l>', ':TmuxNavigateRight<CR>', desc = "Tmux Right"}
-            {'<A-\\>', ':TmuxNavigatePrevious<CR>', desc = "Tmux Previous"}
+            {'<A-h>', ':TmuxNavigateLeft<CR>', desc = "Tmux Left"},
+            {'<A-j>', ':TmuxNavigateDown<CR>', desc = "Tmux Down"},
+            {'<A-k>', ':TmuxNavigateUp<CR>', desc = "Tmux Up"},
+            {'<A-l>', ':TmuxNavigateRight<CR>', desc = "Tmux Right"},
+            {'<A-\\>', ':TmuxNavigatePrevious<CR>', desc = "Tmux Previous"},
         },
     },
 
