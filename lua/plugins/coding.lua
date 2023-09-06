@@ -9,7 +9,7 @@ return {
     -- context-aware commenting
     {
         'numToStr/Comment.nvim',
-        event = "InsertEnter",
+        -- event = "InsertEnter",
         config = function()
             require('Comment').setup()
         end
