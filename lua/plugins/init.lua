@@ -10,6 +10,7 @@ return {
 
     {
         'christoomey/vim-tmux-navigator',
+        lazy = false, 
         keys = {
             {'<A-h>', ':TmuxNavigateLeft<CR>', desc = "Tmux Left"},
             {'<A-j>', ':TmuxNavigateDown<CR>', desc = "Tmux Down"},
