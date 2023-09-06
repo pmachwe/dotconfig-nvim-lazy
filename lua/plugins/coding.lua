@@ -25,7 +25,7 @@ return {
         "NeogitOrg/neogit",
         cmd = "Neogit",
         keys = {
-            {"<f6>", "<cmd>Neogit", desc = "Open Neogit interface for Git operations" },
+            {"<f6>", "<cmd>Neogit<CR>", desc = "Open Neogit interface for Git operations" },
         },
         dependencies = {
             "nvim-lua/plenary.nvim",         -- required

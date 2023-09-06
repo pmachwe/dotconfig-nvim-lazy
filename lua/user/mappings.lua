@@ -24,13 +24,6 @@ vim.api.nvim_set_keymap('', '<A-k>', '<C-w>k', opts)
 vim.api.nvim_set_keymap('', '<A-j>', '<C-w>j', opts)
 vim.api.nvim_set_keymap('', '<A-h>', '<C-w>h', opts)
 
--- Tmux Navigator
-vim.api.nvim_set_keymap('n', '<A-h>', ':TmuxNavigateLeft<CR>', opts)
-vim.api.nvim_set_keymap('n', '<A-j>', ':TmuxNavigateDown<CR>', opts)
-vim.api.nvim_set_keymap('n', '<A-k>', ':TmuxNavigateUp<CR>', opts)
-vim.api.nvim_set_keymap('n', '<A-l>', ':TmuxNavigateRight<CR>', opts)
-vim.api.nvim_set_keymap('n', '<A-\\>', ':TmuxNavigatePrevious<CR>', opts)
-
 -- Quickfix
 vim.api.nvim_set_keymap('n', '<leader>qo', ':copen<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>qc', ':cclose<CR>', opts)
@@ -46,3 +39,6 @@ vim.api.nvim_set_keymap('n', '<c-p>', ':cprevious<CR>', opts)
 vim.api.nvim_set_keymap('n', '\\t', ':ToggleTerm<CR>', opts)
 vim.api.nvim_set_keymap('t', '<C-\\><C-n>\\t', ':ToggleTerm<CR>', opts)
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', opts)
+
+-- Paste and indent
+vim.api.nvim_set_keymap('n', 'p', 'p=`]', opts)
