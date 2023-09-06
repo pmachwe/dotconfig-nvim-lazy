@@ -65,4 +65,7 @@ return {
         ft = 'qf'
     },
 
+    -- Highlight word under curson
+    "RRethy/vim-illuminate",
+
 }
