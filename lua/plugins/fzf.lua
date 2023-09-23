@@ -17,6 +17,7 @@ return {
         -- find
         { "<leader>fb", "<cmd>FzfLua buffers<cr>", desc = "Buffers" },
         { "<leader>ff", "<cmd>FzfLua files<cr>", desc = "Find Files (root dir)" },
+        { "J", "<cmd>FzfLua files<cr>", desc = "Find Files (root dir)" },
         { "<leader>fe", "<cmd>lua require('fzf-lua').files({cwd = vim.fn.expand('%:p:h')})<cr>", desc = "Find Files (cwd)" },
         { "<leader>fr", "<cmd>FzfLua oldfiles<cr>", desc = "Recent" },
         { '<Leader>fi', "<cmd>lua require('fzf-lua').files({cwd = '~/.config/nvim'})<CR>", desc = "Find Files Nvim Config" },
