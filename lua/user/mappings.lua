@@ -43,3 +43,7 @@ vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', opts)
 
 -- Paste and indent
 vim.api.nvim_set_keymap('n', 'p', 'p=`]', opts)
+
+-- Move between buffers (inspired by Lazyvim)
+vim.api.nvim_set_keymap('n', 'H', ':bnext<CR>', opts)
+vim.api.nvim_set_keymap('n', 'L', ':bprevious<CR>', opts)
