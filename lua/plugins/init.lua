@@ -69,4 +69,37 @@ return {
     -- Highlight word under curson
     "RRethy/vim-illuminate",
 
+    -- Writable file explorer
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("oil").setup()
+        end,
+    },
+
+    -- Emacs imenu type of view
+    {
+        'stevearc/aerial.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-tree/nvim-web-devicons"
+        },
+        config = function()
+            require("aerial").setup({
+                -- optionally use on_attach to set keymaps when aerial has attached to a buffer
+                on_attach = function(bufnr)
+                    -- Jump forwards/backwards with '{' and '}'
+                    vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
+                    vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
+                end,
+            })
+            -- You probably also want to set a keymap to toggle aerial
+            vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+        end
+    },
 }
