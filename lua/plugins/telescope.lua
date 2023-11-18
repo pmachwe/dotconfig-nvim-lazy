@@ -9,7 +9,7 @@ return {
         -- find
         { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
         { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files (root dir)" },
-        { "J", "<cmd>Telescope find_files<cr>", desc = "Find Files (root dir)" },
+        { ";", "<cmd>Telescope find_files<cr>", desc = "Find Files (root dir)" },
         { "<leader>fe", "<cmd>lua require('telescope.builtin').find_files({cwd = vim.fn.expand('%:p:h')})<cr>", desc = "Find Files (cwd)" },
         { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent" },
         { '<Leader>fi', "<cmd>lua require('telescope.builtin').find_files({cwd = '~/.config/nvim'})<CR>", desc = "Find Files Nvim Config" },
