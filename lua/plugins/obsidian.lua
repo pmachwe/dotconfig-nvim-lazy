@@ -22,14 +22,6 @@ return {
       -- Required.
       "nvim-lua/plenary.nvim",
     },
-    opts = {
-      workspaces = {
-        {
-          name = "personal",
-          path = "/Users/pmachwe/Obsidian",
-        },
-      },
-    },
   },
 
   -- Theme
