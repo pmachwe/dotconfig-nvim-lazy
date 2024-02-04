@@ -17,6 +17,7 @@ return {
     -- Status line
     {
         "nvim-lualine/lualine.nvim",
+        enabled = false,
         event = "VeryLazy",
         options = { theme = "auto" },
         config = function()
