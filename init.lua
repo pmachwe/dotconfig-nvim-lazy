@@ -19,4 +19,8 @@ require("user.settings")
 require("user.mappings")
 require("user.functions").set_theme()
 
+if vim.g.vscode then
+    vim.cmd("runtime vscode.vim")
+end
+
 vim.cmd("runtime local.lua")
