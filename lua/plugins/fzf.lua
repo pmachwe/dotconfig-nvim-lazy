@@ -14,6 +14,7 @@ return {
 
     keys = {
         { "<leader>ff", "<cmd>FzfLua files<cr>", desc = "Find Files (root dir)" },
+        { "<c-p>", "<cmd>FzfLua files<cr>", desc = "Find Files (root dir)" },
         -- { "<leader><leader>", "<cmd>FzfLua buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },
         { "<leader>fb", "<cmd>FzfLua buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },
         { "<leader>:", "<cmd>FzfLua command_history<cr>", desc = "Command History" },
@@ -21,7 +22,6 @@ return {
         { "<leader>fr", "<cmd>FzfLua oldfiles<cr>", desc = "Recent" },
         { '<Leader>fc', "<cmd>lua require('fzf-lua').files({cwd = '~/.config/nvim'})<CR>", desc = "Find Files Nvim Config" },
         { "<leader>r", "<cmd>FzfLua resume<cr>", desc = "Resume" },
-        -- search
         { "<leader>fl", "<cmd>FzfLua lgrep_curbuf<cr>", desc = "Buffer" },
         { "<leader>fg", "<cmd>FzfLua live_grep<cr>", desc = "Grep (root dir)" },
         { "<leader>/",  "<cmd>lua require('fzf-lua').live_grep({cwd = vim.fn.expand('%:p:h')})<cr>", desc = "Grep (cwd)" },
@@ -34,5 +34,6 @@ return {
         { "<leader>fo", "<cmd>FzfLua vim_options<cr>", desc = "Options" },
         { "<leader>t", "<cmd>FzfLua btags<cr>", desc = "Search into tags in current buffer" },
         { "<leader>ft", "<cmd>FzfLua tags<cr>", desc = "Search into project tags" },
+        { "<c-t>", "<cmd>FzfLua tags<cr>", desc = "Search into project tags" },
     },
 }

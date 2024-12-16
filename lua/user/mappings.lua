@@ -43,8 +43,8 @@ else
     vim.api.nvim_set_keymap('n', '<leader>ql', ':clast<CR>', opts)
     vim.api.nvim_set_keymap('n', '<leader>qf', ':cfirst<CR>', opts)
     vim.api.nvim_set_keymap('n', '<leader>qh', ':chistory<CR>', opts)
-    vim.api.nvim_set_keymap('n', '<c-n>', ':cnext<CR>', opts)
-    vim.api.nvim_set_keymap('n', '<c-p>', ':cprevious<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<A-n>', ':cnext<CR>', opts)
+    vim.api.nvim_set_keymap('n', '<A-p>', ':cprevious<CR>', opts)
 
     -- ToggleTerm
     vim.api.nvim_set_keymap('n', '\\t', ':ToggleTerm<CR>', opts)
