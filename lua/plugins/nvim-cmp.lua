@@ -4,6 +4,7 @@ return {
     -- snippets
     {
         "L3MON4D3/LuaSnip",
+        enabled = false,
         build = (not jit.os:find("Windows"))
         and "echo 'NOTE: jsregexp is optional, so not a big deal if it fails to build'; make install_jsregexp"
         or nil,
