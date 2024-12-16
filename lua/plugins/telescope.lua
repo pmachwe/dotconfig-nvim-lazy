@@ -1,6 +1,6 @@
 return {
     'nvim-telescope/telescope.nvim', 
-    -- enabled = false,
+    enabled = false,
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function() 
         require("telescope").setup {
