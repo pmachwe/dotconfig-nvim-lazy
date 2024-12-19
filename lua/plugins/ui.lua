@@ -4,7 +4,7 @@ return {
     {
         'EdenEast/nightfox.nvim',
         config = function()
-            vim.cmd("colorscheme nightfox")
+            -- vim.cmd("colorscheme nightfox")
             require('nightfox').setup({
                 options = {
                     transparent = true,
@@ -17,7 +17,7 @@ return {
     -- Status line
     {
         "nvim-lualine/lualine.nvim",
-        enabled = false,
+        -- enabled = false,
         event = "VeryLazy",
         options = { theme = "auto" },
         config = function()
