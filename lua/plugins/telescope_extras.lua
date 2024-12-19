@@ -5,9 +5,9 @@ return {
         build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
         dependencies = { "nvim-telescope/telescope.nvim" },
         cmd = "Telescope",
-        --config = function()
-            --require('telescope').load_extension('fzf')
-        --end,
+        config = function()
+            require('telescope').load_extension('fzf')
+        end,
     },
 
     -- P4 files
@@ -36,8 +36,9 @@ return {
         'camgraff/telescope-tmux.nvim',
         dependencies = { "nvim-telescope/telescope.nvim" },
         keys = {
-            {'<Leader>ftw', "<cmd> Telescope tmux windows<CR>", desc = "Tmux windows"},
-            {'<Leader>fts', "<cmd> Telescope tmux sessions<CR>", desc = "Tmux sessions"},
+            {'<Leader>fTw', "<cmd> Telescope tmux windows<CR>", desc = "Tmux windows"},
+            {'<Leader>fTs', "<cmd> Telescope tmux sessions<CR>", desc = "Tmux sessions"},
         },
     },
+
 }

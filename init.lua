@@ -19,6 +19,9 @@ require("user.settings")
 require("user.mappings")
 require("user.functions").set_theme()
 
+require("telescope").load_extension("fzf")
+require("telescope").load_extension("neoclip")
+
 if vim.g.vscode then
     vim.cmd("runtime vscode.vim")
 end

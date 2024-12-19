@@ -1,6 +1,6 @@
 return {
     "ibhagwan/fzf-lua",
-    -- enabled = false,
+    enabled = false,
     -- optional for icon support
     dependencies = {
         { "junegunn/fzf", build = "./install --bin" },
